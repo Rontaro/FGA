@@ -52,6 +52,7 @@ enum class Images {
     FriendSummon,
     DropScrollbar,
     SupportExtra,
+    SupportFriendRequestEnabled,
     SupportNotFound,
     Support,
     SupportScrollBarTop,

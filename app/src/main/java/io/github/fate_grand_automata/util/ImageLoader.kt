@@ -100,6 +100,7 @@ class ImageLoader @Inject constructor(
         Images.FriendSummon -> "friend_summon.png"
         Images.DropScrollbar -> "drop_scrollbar.png"
         Images.SupportExtra -> "support_extra.png"
+        Images.SupportFriendRequestEnabled -> "friend_request_enabled.png"
         Images.SupportNotFound -> "support_not_found.png"
         Images.Support -> "support.png"
         Images.SupportScrollBarTop -> "support_scrollbar_top.png"
