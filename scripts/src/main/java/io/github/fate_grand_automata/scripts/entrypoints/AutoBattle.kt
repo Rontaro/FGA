@@ -398,8 +398,11 @@ class AutoBattle @Inject constructor(
     private fun isFriendRequestScreen() =
         images[Images.SupportExtra] in locations.resultFriendRequestRegion
 
+    private fun isFriendRequestEnabled() =
+        images[Images.SupportFriendRequestEnabled] in locations.resultFriendRequestSendRequestRegion
+
     private fun handleFriendRequestScreen() {
-        if (prefs.selectedServerConfigPref.sendSupportFriendRequest) {
+        if (prefs.selectedServerConfigPref.sendSupportFriendRequest && isFriendRequestEnabled()) {
             sendFriendRequest()
         } else {
             skipFriendRequestScreen()
